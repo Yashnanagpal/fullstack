@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: black;
+        }
+        .ball{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-image: url(football.jpeg); 
+            position: absolute; 
+            background-size: cover;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box"></div>
+    <button onclick="change()">Change</button>
+
+    <div id="ball" class="ball" onmouseenter="move()"></div>
+
+    <script>
+        let colors = ['red','pink','brown','yellow','cyan','green','orange', 'blue','purple']
+        function change(){
+            let index = parseInt(Math.random() * colors.length)
+            document.getElementById("box").style.backgroundColor = colors[index]
+        }
+
+        function move(){
+            //console.log("abc")
+            let x = parseInt(Math.random() * document.documentElement.clientHeight)
+            let y = parseInt(Math.random() * document.documentElement.clientWidth)
+            //console.log(x,y)
+            let ball= document.getElementById("ball")
+            ball.style.top=y+"px";
+            ball.style.left= x+"px";
+
+        }
+    </script>
+</body>
+</html>

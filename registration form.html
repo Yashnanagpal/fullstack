@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-image: url(free-registration-forms.jpg);
+            position: relative;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 550px;
+            margin: 0px;
+            font-family: 'Gill Sans', Calibri, sans-serif;
+        }
+        .container{
+            position: relative;
+            left: 600px;
+
+        }
+        .top{
+            font-size: 40px;
+            font-weight: bolder;
+            padding: 32px 0px;
+        }
+        .name , .email, .country, .password, .gender, .m, .position, .phone, .city ,.confirm, .male{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-weight: bolder;
+            padding-bottom: 8px;
+        }
+      
+        .button{
+            outline: 0mm;
+            width: 200px;
+            position: relative;
+            height: 31px;
+        }
+        .butt{
+            left: 15px;
+        }
+        
+        .no{
+            position: relative;
+            left: -94px;
+        }
+        
+        .cit{
+            position: relative;
+            left: -167px;
+        }
+        .con{
+            position: relative;
+            left: -73px;
+        }
+        .va{
+            height: 35px;
+            width: 574px;
+            background-color: #5a5ae1;
+            color: white;
+            border: 0px;
+            border-radius: 18px;
+            margin-bottom: 16px;
+            box-shadow: 0px 0px 20px 0px #a2a2f5;
+        }
+        .already{
+            display: flex;
+            flex-direction: row;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="top"> Registration</div>
+            <div class="name">
+                <div> Full Name</div>
+                <div>Position you are applying for</div>
+            </div>
+            <div class="position">
+                <div> <input type="text"  class="button" name="" id="" placeholder="Please enter your name"></div>
+                <div> <input type="text" class="button butt" placeholder="Please select"></div>
+            </div>
+            <div class="email">
+                <div> Email</div>
+                <div class="no">Phone number</div>
+            </div>
+            <div class="phone">
+                <div> <input type="text" class="button" placeholder="Email"></div>
+                <div><input type="number" class="button butt" placeholder="Phone number"></div>
+            </div>
+            <div class="country">
+                <div>Country</div>
+                <div class="cit"> City</div>
+            </div>
+            <div class="city">
+                <div> <input type="text" class="button" placeholder="Please enter your county"></div>
+                <div><input type="text" class="button butt" placeholder="Please enter your city"></div>
+            </div>
+            <div class="password">
+                <div>Password</div>
+                <div class="con">Confirm Password</div>
+            </div>
+            <div class="confirm">
+                <div><input type="password" class="button" placeholder="Please enter your password"></div>
+                <div><input type="password" class="button butt" placeholder="Re-enter your password"></div>
+            </div>
+            <div class="gender"> Gender</div>
+            <div class="male">
+                <div class="m">
+                    <div> <input type="radio" value="" id="male" name="n"></div>
+                    <label for="male">Male</label>
+                </div>
+                <div class="m">
+                    <div> <input type="radio" value="" id="female" name="n"></div>
+                    <label for="female">Female</label>
+                </div>
+                <div class="m">
+                    <div> <input type="radio" value="" id="other" name="n"></div>
+                    <label for="other">Other</label>
+                </div>
+                <div class="m">
+                    <div> <input type="radio" value="" id="prefer" name="n"></div>
+                    <label for="prefer">Prefer not to say</label>
+                </div>
+            </div>
+            <div class="next"> <input type="button" class="va" value="Next Step"></div>
+            <div class="already">
+                <div>Already have an account?</div>
+                <a href="">Sign in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
